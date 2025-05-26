@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create NFT</title>
+    <link rel="stylesheet" href="create-nft.css">
+</head>
+<body>
+    <div class="centered-create-form">
+        <div class="upload-section">
+            <div class="upload-box drag-outline" id="uploadBox">
+                <input
+                    type="file"
+                    id="fileInput"
+                    style="display: none"
+                    accept="image/*"
+                    required
+                />
+                <div class="upload-icon-container">
+                    <span class="upload-icon">&#8682;</span>
+                </div>
+                <div class="upload-main-text">
+                    <b>Drag and Drop</b> or <span class="browse-link" id="browseLink">Browse</span>
+                </div>
+                <div class="upload-desc">
+                    Image (NFTs Assets)*
+                </div>
+                <div class="file-types">
+                    File types supported: JPG, PNG, Max size: 10 MB
+                </div>
+                <div id="selectedFile" style="color: #00b4ff; font-size: 13px; margin-top: 8px;"></div>
+            </div>
+            <form class="nft-form stacked-form" id="nftForm">
+                <div class="form-group full-width">
+                    <label>
+                        Your Image Name<span class="required">*</span>
+                    </label>
+                    <input
+                        type="text"
+                        placeholder="Enter your Image name *"
+                        required
+                        id="imageName"
+                    />
+                </div>
+                <button class="submit-btn" type="submit">
+                    Upload Image
+                </button>
+            </form>
+        </div>
+    </div>
+    <div id="alertBox" style="display:none; position:fixed; top:10px; right:10px; z-index:1000; background:#1e1e1e; color:white; padding:12px 22px; border-radius:8px;"></div>
+    <script src="create-nft.js"></script>
+</body>
+</html>
