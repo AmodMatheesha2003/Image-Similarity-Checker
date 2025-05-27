@@ -1,2 +1,32 @@
-# Image-Similarity-Checker
-An intelligent image uploader that checks for visual similarity with existing images before uploading. If no similar image is found, the image will be added. Helps prevent duplicate uploads using image comparison techniques.
+# Image Similarity Checker
+
+This project allows users to upload images and checks whether the uploaded image already exists in the database by using image similarity detection based on ResNet50 embedding. It prevents duplicate image uploads, even if the image is slightly cropped or modified.
+
+## Features
+
+- **Upload and check for duplicate images**
+- **Uses ResNet50 model for feature extraction**
+- **Compares image embeddings to detect similarity**
+- **Prevents uploading of similar or same images**
+- **Frontend built with HTML, CSS, and JavaScript**
+- **Backend developed using Python (Flask)**
+- **MongoDB used for storing image embeddings and metadata**
+
+## How to Run
+
+1. **Clone the repository.**
+2. **Install required packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Create a `.env` file in the root folder.**
+4. **In the `.env` file, insert the following:**
+   ```ini
+   MONGODB_URI=your_mongodb_connection_string
+   DB_NAME=your_database_name
+   ```
+5. **Run `main.py` to start the Flask backend.**
+6. **Open `create-nft.html` in a browser or use Live Server to interact with the frontend.**
+
+> **Note:**  
+> This project uses a pre-trained ResNet50 model to extract image embeddings, which are compared to check for similarity instead of relying on exact image matches.
