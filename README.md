@@ -12,6 +12,13 @@ This project allows users to upload images and checks whether the uploaded image
 - **Backend developed using Python (Flask)**
 - **MongoDB used for storing image embeddings and metadata**
 
+## Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/1Zr1HPmb-NQ/0.jpg)](https://youtu.be/1Zr1HPmb-NQ?si=iTx4Abt17_FEZbm7)
+
+Watch a simple demonstration of the Image Similarity Checker project on YouTube:  
+https://youtu.be/1Zr1HPmb-NQ?si=iTx4Abt17_FEZbm7 
+
 ## How to Run
 
 1. **Clone the repository.**
